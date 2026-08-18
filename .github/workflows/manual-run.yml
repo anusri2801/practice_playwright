@@ -1,0 +1,24 @@
+name: Manual Test Runner
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Select Test Environment'
+        required: true
+        default: 'sit'
+        type: choice
+        options: [sit, uat]
+      tags:
+        description: 'Test tags to run'
+        required: true
+        default: 'smoke'
+        type: choice
+        options: [smoke, regression]
+
+jobs:
+  call-tests:
+    uses: ./.github/workflows/run-tests.yml
+    with:
+      environment: ${{ inputs.environment }}
+      tags: ${{ inputs.tags }}

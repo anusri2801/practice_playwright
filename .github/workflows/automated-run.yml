@@ -1,0 +1,17 @@
+name: Automated Test Runner
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [feature/*]
+  schedule:
+    - cron: '0 8 * * *' # Runs daily at 08:00 UTC
+
+jobs:
+  call-tests:
+    uses: ./.github/workflows/run-tests.yml
+    with:
+      # Hardcode exactly what automated triggers should use
+      environment: 'sit'
+      tags: 'smoke'
