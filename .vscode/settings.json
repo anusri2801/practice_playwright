@@ -1,0 +1,5 @@
+// This removes manual confirmation steps when running prompts.
+{ 
+  "chat.tools.autoApprove": true,
+  "github.copilot.chat.toolSearch": false
+}

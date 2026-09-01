@@ -1,0 +1,12 @@
+{
+  "firstName": "Avery",
+  "lastName": "Hart",
+  "address": "100 Test Street",
+  "city": "Austin",
+  "state": "Texas",
+  "zipCode": "78701",
+  "phoneNumber": "5125550147",
+  "ssn": "123456789",
+  "usernamePrefix": "test",
+  "password": "TestPass123!"
+}
