@@ -10,3 +10,8 @@ export type RegistrationDetails = {
   username: string;
   password: string;
 };
+
+export type RegisteredUser = {
+  username: string;
+  password: string;
+};
