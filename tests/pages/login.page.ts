@@ -15,8 +15,8 @@ export class LoginPage {
     this.errorMessage = page.locator('.error');
   }
 
-  async open(targetUrl: string): Promise<void> {
-    await this.page.goto(targetUrl);
+  async open(): Promise<void> {
+    await this.page.goto('/');
   }
 
   async login(username: string, password: string): Promise<void> {

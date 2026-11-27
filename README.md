@@ -22,7 +22,9 @@
 }
 
 
-6. Go to ncp.json file and click "Start" written above playwright-mcp
+6. Go to mcp.json file and click "Start" written above playwright-mcp
 7. Verify that Playwright MCP server is now connected in Co-pilot by clicking on gear icon and going to MCP servers
 
 ** The MCP Server simply acts as a bridge allowing an AI agent like (Claude, Co-pilot, Cursor, kiro etc) to interact with a live browser , execute actions and generate playwright code.**
+
+**Playwright custom fixtures let you encapsulate reusable setup, teardown, and Page Object Models (POMs) using test.extend(), keeping your test files clean and isolated.**
